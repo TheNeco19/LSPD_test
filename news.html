@@ -1,23 +1,59 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>News | LSPD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LSPD News</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="light-mode">
   <header>
-    <div class="container">
+    <div class="header-container">
       <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
-          <li><a href="team.html" class="active">Mitarbeitende</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button id="modeToggle">Dark Mode</button>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="team.html">Mitarbeitende</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <main class="container">
+    <section class="news-section">
+      <h2>Aktuelle News</h2>
+      <p>Bleib informiert über die neuesten Ereignisse beim LSPD.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>🔔 Neue Ausrüstung verfügbar</h3>
+          <p>Unsere Officer wurden mit neuer taktischer Ausrüstung ausgestattet. Sicherheit steht an erster Stelle!</p>
+          <p class="date">Veröffentlicht am 25. Mai 2025</p>
+        </article>
+
+        <article class="card">
+          <h3>📢 Schulung für Funkdisziplin</h3>
+          <p>Am Montag findet eine Pflichtschulung zur Funkdisziplin für alle Einsatzkräfte statt. Teilnahme ist verpflichtend.</p>
+          <p class="date">Veröffentlicht am 23. Mai 2025</p>
+        </article>
+
+        <article class="card">
+          <h3>🚓 Erfolgreicher Grosseinsatz</h3>
+          <p>Gestern Abend wurde ein bewaffneter Überfall erfolgreich beendet. Danke an alle beteiligten Einheiten!</p>
+          <p class="date">Veröffentlicht am 20. Mai 2025</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
+  </footer>
+</body>
+</html>

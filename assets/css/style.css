@@ -178,3 +178,14 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+/* news */
+.news-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.news-section .date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
