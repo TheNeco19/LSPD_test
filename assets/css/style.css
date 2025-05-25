@@ -1,209 +1,180 @@
-/* Reset & Basis */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Grundlayout */
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #121212;
-  color: #f0f0f0;
-  line-height: 1.6;
-}
-
-a {
-  color: #66b3ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: #e0e0e0;
 }
 
 /* Header */
+header {
+  background-color: #0a0a0a;
+  padding: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #1a1a1a;
-  border-bottom: 2px solid #0055aa;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.header-container h1 {
-  flex-grow: 1;
-  color: #f0f0f0;
+.logo {
+  height: 60px;
+}
+
+header h1 {
   font-size: 1.8rem;
-  font-weight: 700;
+  color: #66b3ff;
+}
+
+#modeToggle {
+  padding: 10px 16px;
+  background-color: #0055aa;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#modeToggle:hover {
+  background-color: #003f7a;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+  background-color: #141414;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #0055aa;
+  border-radius: 8px;
 }
 
 /* Container */
 .container {
   width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 0;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-/* Buttons */
-#modeToggle {
-  background-color: #0055aa;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 85, 170, 0.3);
+  margin-bottom: 40px;
 }
 
-#modeToggle:hover {
-  background-color: #004080;
+.hero-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px 30px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.btn-primary, .btn-secondary {
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block;
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #66b3ff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
+  padding: 12px 25px;
   background-color: #0055aa;
   color: #fff;
-  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #004080;
 }
 
-.btn-secondary {
+/* Cards */
+.info-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 14px;
+  flex: 1 1 300px;
+  box-shadow: 0 0 15px rgba(0, 85, 170, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
   color: #66b3ff;
-  padding: 8px 15px;
-  border: 2px solid #66b3ff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.btn-secondary {
+  padding: 10px 18px;
+  background-color: #003f7a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
 .btn-secondary:hover {
-  background-color: #66b3ff;
-  color: #121212;
+  background-color: #002b55;
 }
 
 /* Footer */
 footer {
-  background-color: #1a1a1a;
+  background-color: #0a0a0a;
+  color: #666;
   text-align: center;
   padding: 20px 0;
-  border-top: 2px solid #0055aa;
-}
-
-/* Login Page Styles */
-#loginForm {
-  background-color: #1e1e1e;
-  max-width: 350px;
-  margin: 100px auto;
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 85, 170, 0.6);
-  text-align: center;
-}
-
-#loginForm h2 {
-  margin-bottom: 25px;
-  color: #66b3ff;
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-
-#loginForm input[type="text"],
-#loginForm input[type="password"] {
-  width: 100%;
-  padding: 12px 15px;
-  margin: 10px 0 20px 0;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: #121212;
-  color: #f0f0f0;
-  box-shadow: inset 0 0 5px #000000;
-  transition: background-color 0.3s ease;
-}
-
-#loginForm input[type="text"]::placeholder,
-#loginForm input[type="password"]::placeholder {
-  color: #888;
-}
-
-#loginForm input[type="text"]:focus,
-#loginForm input[type="password"]:focus {
-  background-color: #222;
-  outline: none;
-}
-
-#loginForm button {
-  width: 100%;
-  padding: 12px;
-  background-color: #0055aa;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#loginForm button:hover {
-  background-color: #004080;
-}
-
-#loginError {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #b00020;
-  display: none;
-}
-
-/* Light Mode Anpassung nur für Login */
-body.light-mode #loginForm {
-  background-color: #ffffff;
-  color: #121212;
-  box-shadow: 0 0 15px rgba(0, 85, 170, 0.3);
-}
-
-body.light-mode #loginForm h2 {
-  color: #0055aa;
-}
-
-body.light-mode #loginForm input[type="text"],
-body.light-mode #loginForm input[type="password"] {
-  background-color: #f0f0f0;
-  color: #121212;
-  box-shadow: inset 0 0 5px #ccc;
-}
-
-body.light-mode #loginForm input[type="text"]::placeholder,
-body.light-mode #loginForm input[type="password"]::placeholder {
-  color: #666;
-}
-
-body.light-mode #loginForm input[type="text"]:focus,
-body.light-mode #loginForm input[type="password"]:focus {
-  background-color: #e0e0e0;
-  outline: none;
-}
-
-body.light-mode #loginForm button {
-  background-color: #0055aa;
-  color: white;
-}
-
-body.light-mode #loginForm button:hover {
-  background-color: #004080;
-}
-
-body.light-mode #loginError {
-  color: #b00020;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
