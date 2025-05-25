@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<div id="loginForm">
-  <h2>Login</h2>
-  <input type="text" id="username" placeholder="Benutzername" />
-  <input type="password" id="password" placeholder="Passwort" />
-  <button onclick="login()">Anmelden</button>
+<div id="loginForm" role="main" aria-labelledby="loginTitle">
+  <h2 id="loginTitle">Login</h2>
+  <input type="text" id="username" placeholder="Benutzername" aria-label="Benutzername" />
+  <input type="password" id="password" placeholder="Passwort" aria-label="Passwort" />
+  <button onclick="login()" aria-describedby="loginError">Anmelden</button>
   <p id="loginError" style="color: red; display:none;">Falscher Benutzername oder Passwort.</p>
 </div>
 
