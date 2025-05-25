@@ -1,30 +1,11 @@
-<script src="assets/js/auth.js" defer></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    checkAuth();
-  });
-</script>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kleiderordnung | Vespucci Police Department</title>
+  <title>Kleiderordnung | LSPD</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  
-  <style>
-    /* Beispiel: falls du spezielle Styles für diese Seite willst, hier rein */
-    /* Du kannst hier noch Styles hinzufügen, analog pdv-section im Beispiel */
-  </style>
-
-  <script src="assets/js/auth.js" defer></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      checkAuth();
-    });
-  </script>
-  <!-- Falls du noch andere Scripts hast, wie main.js, hier einfügen -->
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body class="light-mode">
   <header>
@@ -45,129 +26,120 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Kleiderordnung & Ausstattung</h2>
+  <main class="container">
+    <section class="news-section">
+      <h2>Kleiderordnung & Ausstattung</h2>
+      <p>Alle Dienstkleidungsregeln und Ausrüstungsdetails für das LSPD-Team.</p>
 
-    <section>
-      <h3>Allgemeine Bestimmungen</h3>
-      <ul>
-        <li>Die Dienstkleidung darf unter keinen Umständen von den Fotos abweichen!</li>
-        <li>Der Dienstkleidung darf <strong>nichts</strong> hinzugefügt werden!</li>
-        <li>Nichteinhaltung wird mit einer Verwarnung geahndet!</li>
-      </ul>
-    </section>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Allgemeine Bestimmungen</h3>
+          <ul>
+            <li>Die Dienstkleidung darf unter keinen Umständen von den Fotos abweichen!</li>
+            <li>Der Dienstkleidung darf <strong>nichts</strong> hinzugefügt werden!</li>
+            <li>Nichteinhaltung wird mit einer Verwarnung geahndet!</li>
+          </ul>
+        </article>
 
-    <section>
-      <h3>Kleidung – Männer</h3>
-      <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
-      <h4>Waffen pro Rang</h4>
-      <table>
-        <thead>
-          <tr><th>Rang</th><th>Waffen</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-        </tbody>
-      </table>
-    </section>
+        <article class="card">
+          <h3>Kleidung – Männer</h3>
+          <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
+          <h4>Waffen pro Rang</h4>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Waffen</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+            </tbody>
+          </table>
+        </article>
 
-    <section>
-      <h3>Kleidung – Frauen</h3>
-      <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
-      <h4>Waffen pro Rang</h4>
-      <table>
-        <thead>
-          <tr><th>Rang</th><th>Waffen</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-          <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-        </tbody>
-      </table>
-    </section>
+        <article class="card">
+          <h3>Kleidung – Frauen</h3>
+          <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
+          <h4>Waffen pro Rang</h4>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Waffen</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+              <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+            </tbody>
+          </table>
+        </article>
 
-    <section>
-      <h3>Winteroutfits</h3>
-      <p><strong>Kopfbedeckung:</strong> Pflicht für alle außer Captain</p>
-      <h4>Waffen (alle Geschlechter)</h4>
-      <table>
-        <thead>
-          <tr><th>Rang</th><th>Waffen</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Rekrut</td><td>Leuchtpistole, Pistole, Fallschirm, Taschenlampe, Feuerlöscher, Schlagstock, Tazer</td></tr>
-          <tr><td>Officer 1</td><td>+ Schweres Gewehr</td></tr>
-          <tr><td>Officer 2</td><td>–</td></tr>
-          <tr><td>Officer 3</td><td>–</td></tr>
-          <tr><td>Sergeant</td><td>Pumpgun Mk2</td></tr>
-          <tr><td>Lieutenant</td><td>Militärgewehr</td></tr>
-          <tr><td>Captain</td><td>Dienstgewehr</td></tr>
-        </tbody>
-      </table>
-      <p><em>Waffen vom vorherigen Rang dürfen weiterhin verwendet werden!</em></p>
-    </section>
+        <article class="card">
+          <h3>Winteroutfits</h3>
+          <p><strong>Kopfbedeckung:</strong> Pflicht für alle außer Captain</p>
+          <h4>Waffen (alle Geschlechter)</h4>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Waffen</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Rekrut</td><td>Leuchtpistole, Pistole, Fallschirm, Taschenlampe, Feuerlöscher, Schlagstock, Tazer</td></tr>
+              <tr><td>Officer 1</td><td>+ Schweres Gewehr</td></tr>
+              <tr><td>Officer 2</td><td>–</td></tr>
+              <tr><td>Officer 3</td><td>–</td></tr>
+              <tr><td>Sergeant</td><td>Pumpgun Mk2</td></tr>
+              <tr><td>Lieutenant</td><td>Militärgewehr</td></tr>
+              <tr><td>Captain</td><td>Dienstgewehr</td></tr>
+            </tbody>
+          </table>
+          <p><em>Waffen vom vorherigen Rang dürfen weiterhin verwendet werden!</em></p>
+        </article>
 
-    <section>
-      <h3>Gehaltsliste Vespucci PD</h3>
-      <table>
-        <thead>
-          <tr><th>Rang</th><th>Level</th><th>Gehalt</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Chief of Police</td><td>14</td><td>$2.500</td></tr>
-          <tr><td>Chief of Department</td><td>13</td><td>$2.450</td></tr>
-          <tr><td>Assistant Chief</td><td>12</td><td>$2.400</td></tr>
-          <tr><td>Inspector</td><td>11</td><td>$2.300</td></tr>
-          <tr><td>Commander</td><td>10</td><td>$2.200</td></tr>
-          <tr><td>Captain</td><td>9</td><td>$2.100</td></tr>
-          <tr><td>1st Lieutenant</td><td>8</td><td>$2.000</td></tr>
-          <tr><td>2nd Lieutenant</td><td>7</td><td>$1.950</td></tr>
-          <tr><td>Sr. Sergeant</td><td>6</td><td>$1.850</td></tr>
-          <tr><td>1st Sergeant</td><td>5</td><td>$1.800</td></tr>
-          <tr><td>2nd Sergeant</td><td>4</td><td>$1.750</td></tr>
-          <tr><td>Officer 3</td><td>3</td><td>$1.650</td></tr>
-          <tr><td>Officer 2</td><td>2</td><td>$1.600</td></tr>
-          <tr><td>Officer 1</td><td>1</td><td>$1.550</td></tr>
-          <tr><td>Rekrut</td><td>0</td><td>$1.500</td></tr>
-        </tbody>
-      </table>
-    </section>
+        <article class="card">
+          <h3>Gehaltsliste Vespucci PD</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Level</th><th>Gehalt</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Chief of Police</td><td>14</td><td>$2.500</td></tr>
+              <tr><td>Chief of Department</td><td>13</td><td>$2.450</td></tr>
+              <tr><td>Assistant Chief</td><td>12</td><td>$2.400</td></tr>
+              <tr><td>Inspector</td><td>11</td><td>$2.300</td></tr>
+              <tr><td>Commander</td><td>10</td><td>$2.200</td></tr>
+              <tr><td>Captain</td><td>9</td><td>$2.100</td></tr>
+              <tr><td>1st Lieutenant</td><td>8</td><td>$2.000</td></tr>
+              <tr><td>2nd Lieutenant</td><td>7</td><td>$1.950</td></tr>
+              <tr><td>Sr. Sergeant</td><td>6</td><td>$1.850</td></tr>
+              <tr><td>1st Sergeant</td><td>5</td><td>$1.800</td></tr>
+              <tr><td>2nd Sergeant</td><td>4</td><td>$1.750</td></tr>
+              <tr><td>Officer 3</td><td>3</td><td>$1.650</td></tr>
+              <tr><td>Officer 2</td><td>2</td><td>$1.600</td></tr>
+              <tr><td>Officer 1</td><td>1</td><td>$1.550</td></tr>
+              <tr><td>Rekrut</td><td>0</td><td>$1.500</td></tr>
+            </tbody>
+          </table>
+        </article>
 
-    <section>
-      <h3>Rechte bei Festnahmen</h3>
-      <p>
-        Offiziere haben das Recht, Verdächtige gemäß den Dienstvorschriften festzunehmen. Dabei müssen sie sich an die Einhaltung der Rechte der Bürger halten und die Festnahme begründen können.
-      </p>
+        <article class="card">
+          <h3>Rechte bei Festnahmen</h3>
+          <p>
+            Offiziere haben das Recht, Verdächtige gemäß den Dienstvorschriften festzunehmen. Dabei müssen sie sich an die Einhaltung der Rechte der Bürger halten und die Festnahme begründen können.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Vespucci Police Department</p>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
   </footer>
-
-  <script>
-    // Beispiel Dark Mode Toggle Script
-    document.getElementById('modeToggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      document.body.classList.toggle('light-mode');
-    });
-
-    // Logout Funktion (muss im auth.js definiert sein oder hier)
-    function logout() {
-      // Beispiel: localStorage.clear(); oder ein Redirect zu Login-Seite
-      alert('Logout-Funktion noch nicht implementiert.');
-    }
-  </script>
 </body>
 </html>
