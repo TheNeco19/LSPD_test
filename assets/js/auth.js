@@ -25,5 +25,5 @@ function checkAuth() {
 
 function logout() {
   sessionStorage.removeItem('loggedInUser');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
