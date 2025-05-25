@@ -198,8 +198,6 @@ footer {
   margin: 100px auto;
   padding: 30px 25px;
   border-radius: 12px;
-  font-size: 2.2rem;
-  margin-bottom: 20px;
   box-shadow: 0 0 15px rgba(0, 85, 170, 0.6);
   text-align: center;
 }
@@ -209,8 +207,6 @@ footer {
   color: #66b3ff;
   font-size: 2rem;
   letter-spacing: 1px;
-  padding: 40px 30px;
-  max-width: 400px;
 }
 
 #loginForm input[type="text"],
