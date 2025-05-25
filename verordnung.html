@@ -1,15 +1,15 @@
-<script src="assets/js/auth.js" defer></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    checkAuth();
-  });
-</script>
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Kleiderordnung | Vespucci Police Department</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Kleiderordnung | Vespucci Police Department</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/js/auth.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuth();
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -22,7 +22,7 @@
       <ul>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
-        <li><a href="verordnung.html" class="active">verordnung</a></li>
+        <li><a href="verordnung.html" class="active">Kleiderordnung</a></li>
         <li><a href="funkcodes.html">Funkcodes</a></li>
         <li><a href="rangstruktur.html">Rangstruktur</a></li>
         <li><a href="#" onclick="logout()">Logout</a></li>
@@ -30,136 +30,136 @@
     </nav>
   </header>
 
-    <main>
-        <section>
-            <h2>Allgemeine Bestimmungen</h2>
-            <ul>
-                <li>Die Dienstkleidung darf unter keinen Umständen von den Fotos abweichen!</li>
-                <li>Der Dienstkleidung darf <strong>nichts</strong> hinzugefügt werden!</li>
-                <li>Nichteinhaltung wird mit einer Verwarnung geahndet!</li>
-            </ul>
-        </section>
+  <main>
+    <h2>Kleiderordnung & Ausstattung</h2>
 
-        <section>
-            <h2>Kleidung – Männer</h2>
-            <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
-            <h3>Waffen pro Rang</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rang</th>
-                        <th>Waffen</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                </tbody>
-            </table>
-        </section>
+    <section>
+      <h3>Allgemeine Bestimmungen</h3>
+      <ul>
+        <li>Die Dienstkleidung darf unter keinen Umständen von den Fotos abweichen!</li>
+        <li>Der Dienstkleidung darf <strong>nichts</strong> hinzugefügt werden!</li>
+        <li>Nichteinhaltung wird mit einer Verwarnung geahndet!</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Kleidung – Frauen</h2>
-            <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
-            <h3>Waffen pro Rang</h3>
-            <table>
-                <thead>
-                    <tr><th>Rang</th><th>Waffen</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
-                    <tr><td>Officer 1</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                    <tr><td>Officer 2</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                    <tr><td>Officer 3</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                    <tr><td>Sergeant</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                    <tr><td>Lieutenant</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                    <tr><td>Captain</td><td>Schlagstock, Tazer, Radio, Taschenlampe, Pistole</td></tr>
-                </tbody>
-            </table>
-        </section>
+    <section>
+      <h3>Kleidung – Männer</h3>
+      <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
+      <h4>Waffen pro Rang</h4>
+      <table>
+        <thead>
+          <tr><th>Rang</th><th>Waffen</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section>
-            <h2>Winteroutfits</h2>
-            <p><strong>Kopfbedeckung:</strong> Pflicht für alle außer Captain</p>
-            <h3>Waffen (alle Geschlechter)</h3>
-            <table>
-                <thead>
-                    <tr><th>Rang</th><th>Waffen</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Rekrut</td><td>Leuchtpistole, Pistole, Fallschirm, Taschenlampe, Feuerlöscher, Schlagstock, Tazer</td></tr>
-                    <tr><td>Officer 1</td><td>+ Schweres Gewehr</td></tr>
-                    <tr><td>Officer 2</td><td>–</td></tr>
-                    <tr><td>Officer 3</td><td>–</td></tr>
-                    <tr><td>Sergeant</td><td>Pumpgun Mk2</td></tr>
-                    <tr><td>Lieutenant</td><td>Militärgewehr</td></tr>
-                    <tr><td>Captain</td><td>Dienstgewehr</td></tr>
-                </tbody>
-            </table>
-            <p><em>Waffen vom vorherigen Rang dürfen weiterhin verwendet werden!</em></p>
-        </section>
+    <section>
+      <h3>Kleidung – Frauen</h3>
+      <p><strong>Kopfbedeckung:</strong> nicht Pflicht für alle Ränge</p>
+      <h4>Waffen pro Rang</h4>
+      <table>
+        <thead>
+          <tr><th>Rang</th><th>Waffen</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Rekrut</td><td>Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 1</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 2</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Officer 3</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Sergeant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Lieutenant</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+          <tr><td>Captain</td><td>Pistole, Schlagstock, Tazer, Radio, Taschenlampe</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section>
-            <h2>Gehaltsliste Vespucci PD</h2>
-            <table>
-                <thead>
-                    <tr><th>Rang</th><th>Level</th><th>Gehalt</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Chief of Police</td><td>14</td><td>$2.500</td></tr>
-                    <tr><td>Chief of Department</td><td>13</td><td>$2.450</td></tr>
-                    <tr><td>Assistant Chief</td><td>12</td><td>$2.400</td></tr>
-                    <tr><td>Inspector</td><td>11</td><td>$2.300</td></tr>
-                    <tr><td>Commander</td><td>10</td><td>$2.200</td></tr>
-                    <tr><td>Captain</td><td>9</td><td>$2.100</td></tr>
-                    <tr><td>1st Lieutenant</td><td>8</td><td>$2.000</td></tr>
-                    <tr><td>2nd Lieutenant</td><td>7</td><td>$1.950</td></tr>
-                    <tr><td>Sr. Sergeant</td><td>6</td><td>$1.850</td></tr>
-                    <tr><td>1st Sergeant</td><td>5</td><td>$1.800</td></tr>
-                    <tr><td>2nd Sergeant</td><td>4</td><td>$1.750</td></tr>
-                    <tr><td>Officer 3</td><td>3</td><td>$1.650</td></tr>
-                    <tr><td>Officer 2</td><td>2</td><td>$1.600</td></tr>
-                    <tr><td>Officer 1</td><td>1</td><td>$1.550</td></tr>
-                    <tr><td>Rekrut</td><td>0</td><td>$1.500</td></tr>
-                </tbody>
-            </table>
-        </section>
+    <section>
+      <h3>Winteroutfits</h3>
+      <p><strong>Kopfbedeckung:</strong> Pflicht für alle außer Captain</p>
+      <h4>Waffen (alle Geschlechter)</h4>
+      <table>
+        <thead>
+          <tr><th>Rang</th><th>Waffen</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Rekrut</td><td>Leuchtpistole, Pistole, Fallschirm, Taschenlampe, Feuerlöscher, Schlagstock, Tazer</td></tr>
+          <tr><td>Officer 1</td><td>+ Schweres Gewehr</td></tr>
+          <tr><td>Officer 2</td><td>–</td></tr>
+          <tr><td>Officer 3</td><td>–</td></tr>
+          <tr><td>Sergeant</td><td>Pumpgun Mk2</td></tr>
+          <tr><td>Lieutenant</td><td>Militärgewehr</td></tr>
+          <tr><td>Captain</td><td>Dienstgewehr</td></tr>
+        </tbody>
+      </table>
+      <p><em>Waffen vom vorherigen Rang dürfen weiterhin verwendet werden!</em></p>
+    </section>
 
-        <section>
-            <h2>Rechte bei Festnahmen</h2>
-            <p>
-                Sie haben das Recht zu schweigen. Alles was Sie sagen, kann und wird gegen Sie verwendet werden.<br>
-                Sie haben das Recht auf Akteneinsicht. Da es keinen staatlich geprüften Anwalt gibt,<br>
-                sind wir nicht in der Lage, Ihnen einen zu stellen. Haben Sie Ihre Rechte verstanden?<br>
-                <strong>Rechte müssen, falls nicht verstanden, dreimal vorgelesen werden.</strong>
-            </p>
-            <p><strong>Aus der Asservatenkammer wird nichts ohne Bestätigung entnommen!</strong></p>
-        </section>
+    <section>
+      <h3>Gehaltsliste Vespucci PD</h3>
+      <table>
+        <thead>
+          <tr><th>Rang</th><th>Level</th><th>Gehalt</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chief of Police</td><td>14</td><td>$2.500</td></tr>
+          <tr><td>Chief of Department</td><td>13</td><td>$2.450</td></tr>
+          <tr><td>Assistant Chief</td><td>12</td><td>$2.400</td></tr>
+          <tr><td>Inspector</td><td>11</td><td>$2.300</td></tr>
+          <tr><td>Commander</td><td>10</td><td>$2.200</td></tr>
+          <tr><td>Captain</td><td>9</td><td>$2.100</td></tr>
+          <tr><td>1st Lieutenant</td><td>8</td><td>$2.000</td></tr>
+          <tr><td>2nd Lieutenant</td><td>7</td><td>$1.950</td></tr>
+          <tr><td>Sr. Sergeant</td><td>6</td><td>$1.850</td></tr>
+          <tr><td>1st Sergeant</td><td>5</td><td>$1.800</td></tr>
+          <tr><td>2nd Sergeant</td><td>4</td><td>$1.750</td></tr>
+          <tr><td>Officer 3</td><td>3</td><td>$1.650</td></tr>
+          <tr><td>Officer 2</td><td>2</td><td>$1.600</td></tr>
+          <tr><td>Officer 1</td><td>1</td><td>$1.550</td></tr>
+          <tr><td>Rekrut</td><td>0</td><td>$1.500</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section>
-            <h2>Wichtige Befehle</h2>
-            <h3>Sperrzone</h3>
-            <ul>
-                <li><code>/sperrzone 100</code></li>
-                <li><code>/dsperrzone</code></li>
-            </ul>
+    <section>
+      <h3>Rechte bei Festnahmen</h3>
+      <p>
+        Sie haben das Recht zu schweigen. Alles was Sie sagen, kann und wird gegen Sie verwendet werden.<br>
+        Sie haben das Recht auf Akteneinsicht. Da es keinen staatlich geprüften Anwalt gibt,<br>
+        sind wir nicht in der Lage, Ihnen einen zu stellen. Haben Sie Ihre Rechte verstanden?<br>
+        <strong>Rechte müssen, falls nicht verstanden, dreimal vorgelesen werden.</strong>
+      </p>
+      <p><strong>Aus der Asservatenkammer wird nichts ohne Bestätigung entnommen!</strong></p>
+    </section>
 
-            <h3>Fingerabdruckscanner</h3>
-            <ul>
-                <li><code>/scan</code></li>
-            </ul>
+    <section>
+      <h3>Wichtige Befehle</h3>
 
-            <h3>Grappler</h3>
-            <ul>
-                <li><code>/grappler install</code></li>
-                <li><code>/grappler remove</code></li>
-            </ul>
-        </section>
-    </main>
+      <h4>Sperrzone</h4>
+      <ul>
+        <li><code>/sperrzone 100</code></li>
+        <li><code>/dsperrzone</code></li>
+      </ul>
+
+      <h4>Fingerabdruckscanner</h4>
+      <ul>
+        <li><code>/scan</code></li>
+      </ul>
+
+      <h4>Grappler</h4>
+      <ul>
+        <li><code>/grappler install</code></li>
+        <li><code>/grappler remove</code></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
