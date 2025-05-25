@@ -4,3 +4,192 @@
     checkAuth();
   });
 </script>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rangstruktur | LSPD</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="light-mode">
+  <header>
+    <div class="header-container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button id="modeToggle">Dark Mode</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
+        <li><a href="verordnung.html">verordnung</a></li>
+        <li><a href="funkcodes.html">Funkcodes</a></li>
+        <li><a href="rangstruktur.html" class="active">Rangstruktur</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="news-section">
+      <h2>Rangstruktur & Aufgabenbereiche</h2>
+      <p>Übersicht der Ränge und deren Funktionen sowie Verantwortlichkeiten im LSPD.</p>
+
+      <div class="card-grid">
+        <!-- Leitung -->
+        <article class="card">
+          <h3>Leitung</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Funktion & Verantwortlichkeiten</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Chief of Police</td><td></td></tr>
+              <tr><td>Chief of Department</td><td></td></tr>
+              <tr><td>Assistent Chief</td><td></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Befehlsgeber -->
+        <article class="card">
+          <h3>Befehlsgeber</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Funktion & Verantwortlichkeiten</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Inspector</td>
+                <td>
+                  <strong>Funktion:</strong> Der Inspektor übernimmt eine wichtige Managementrolle und koordiniert die gesamte Polizeioperation in der Stadt.<br />
+                  <strong>Verantwortlichkeiten:</strong> Koordination zwischen Abteilungen und Spezialoperationen. Regelmäßige Evaluation der Polizeiarbeit und Einführung von Verbesserungen. Enge Zusammenarbeit mit dem Assistant Chief und Chief of Department.
+                </td>
+              </tr>
+              <tr>
+                <td>Commander</td>
+                <td>
+                  <strong>Funktion:</strong> Verantwortlich für die Überwachung und Leitung spezieller Abteilungen des LSPD.<br />
+                  <strong>Verantwortlichkeiten:</strong> Strategische Leitung und Koordination großer Einsätze und Operationen. Beratung und enge Zusammenarbeit mit dem Inspektor und der Führung des LSPD. Sicherstellung der Einhaltung aller Vorschriften und Richtlinien.
+                </td>
+              </tr>
+              <tr>
+                <td>Captain</td>
+                <td>
+                  <strong>Funktion:</strong> Verantwortlich für die Organisation und Leitung des LSPD-Dienstes.<br />
+                  <strong>Verantwortlichkeiten:</strong> Erstellung und Implementierung von Taktiken und Strategien zur Verbrechensbekämpfung. Leitung der täglichen Abläufe im Dienst. Berichtswesen an den Commander.
+                </td>
+              </tr>
+              <tr>
+                <td>2nd Lieutenant</td>
+                <td>
+                  <strong>Funktion:</strong> Höherer Lieutenant, der komplexere Aufgaben übernimmt und direkt an den Captain berichtet.<br />
+                  <strong>Verantwortlichkeiten:</strong> Leitung größerer Abteilungen und spezialisierter Einheiten. Auswertung und Analyse von Einsätzen. Schnittstelle zwischen operativer und strategischer Führungsebene.
+                </td>
+              </tr>
+              <tr>
+                <td>1st Lieutenant</td>
+                <td>
+                  <strong>Funktion:</strong> Unteroffizier in der Führungsebene mit Verantwortung für großen Bereich oder Team.<br />
+                  <strong>Verantwortlichkeiten:</strong> Kontrolle der Tagesgeschäfte. Koordination strategischer Einsätze und Leitung bei Abwesenheit des Captains. Überwachung von Trainings und Disziplinarmaßnahmen.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Sergeants -->
+        <article class="card">
+          <h3>Sergeants</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Funktion & Verantwortlichkeiten</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sr. Sergeant</td>
+                <td>
+                  <strong>Funktion:</strong> Sehr erfahrener Sergeant mit Verantwortung über mehrere Teams.<br />
+                  <strong>Verantwortlichkeiten:</strong> Führung bei komplexen Einsätzen. Zusammenarbeit mit Lieutenants. Überwachung der Weiterbildung.
+                </td>
+              </tr>
+              <tr>
+                <td>2nd Sergeant</td>
+                <td>
+                  <strong>Funktion:</strong> Höherer Sergeant mit Verantwortung für Bezirk oder größere Einheit.<br />
+                  <strong>Verantwortlichkeiten:</strong> Leitung größerer Einsätze und Teamkoordination. Krisenmanagement. Berichterstattung an Lieutenants.
+                </td>
+              </tr>
+              <tr>
+                <td>1st Sergeant</td>
+                <td>
+                  <strong>Funktion:</strong> Erste Führungsrolle mit Verantwortung für kleines Team.<br />
+                  <strong>Verantwortlichkeiten:</strong> Dienstplanung, Einhaltung der Richtlinien, Koordination von Streifen und Notfällen.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Officers -->
+        <article class="card">
+          <h3>Officers</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Funktion & Verantwortlichkeiten</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Officer |||</td>
+                <td>
+                  <strong>Funktion:</strong> Fortgeschrittener Officer, Mentor für jüngere Officers.<br />
+                  <strong>Verantwortlichkeiten:</strong> Leitung kleiner Teams bei Einsätzen. Überwachung der Ausbildung von Rekruten. Unterstützung bei Ermittlungen.
+                </td>
+              </tr>
+              <tr>
+                <td>Officer ||</td>
+                <td>
+                  <strong>Funktion:</strong> Erfahrener Polizist mit vertieften Kenntnissen.<br />
+                  <strong>Verantwortlichkeiten:</strong> Eigenverantwortliche Streifengänge. Unterstützung neuer Polizisten. Bearbeitung kleinerer Ermittlungen.
+                </td>
+              </tr>
+              <tr>
+                <td>Officer |</td>
+                <td>
+                  <strong>Funktion:</strong> Vollwertiger Polizist mit abgeschlossener Grundausbildung.<br />
+                  <strong>Verantwortlichkeiten:</strong> Durchführung von Streifengängen. Verfolgung von Ordnungswidrigkeiten. Erste Kontaktperson bei Notrufen.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Rekrut -->
+        <article class="card">
+          <h3>Rekrut</h3>
+          <table>
+            <thead>
+              <tr><th>Rang</th><th>Funktion & Verantwortlichkeiten</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rekrut</td>
+                <td>
+                  <strong>Funktion:</strong> Neu angeheuerter Polizist in der Probezeit.<br />
+                  <strong>Verantwortlichkeiten:</strong> Teilnahme an Schulungen. Begleitung erfahrener Polizisten. Keine eigenständige Polizeiarbeit.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
+  </footer>
+</body>
+</html>
