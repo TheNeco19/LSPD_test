@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* falls noch nicht gesetzt */
+  border-bottom: 2px solid #0055aa;
+}
+.header-container h1 {
+  flex-grow: 1;
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -41,8 +55,7 @@ header {
 
 .logo {
   height: 60px;
-  margin-left: 20px;
-  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 nav ul {
@@ -121,6 +134,21 @@ nav li {
 }
 
 /* Buttons */
+
+#modeToggle {
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#modeToggle:hover {
+  background-color: #004080;
+}
 .btn-primary, .btn-secondary {
   text-decoration: none;
   cursor: pointer;
