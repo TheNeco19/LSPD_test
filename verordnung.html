@@ -1,17 +1,32 @@
+<script src="assets/js/auth.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    checkAuth();
+  });
+</script>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kleiderordnung | Vespucci Police Department</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <style>
+    /* Beispiel: falls du spezielle Styles für diese Seite willst, hier rein */
+    /* Du kannst hier noch Styles hinzufügen, analog pdv-section im Beispiel */
+  </style>
+
   <script src="assets/js/auth.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       checkAuth();
     });
   </script>
+  <!-- Falls du noch andere Scripts hast, wie main.js, hier einfügen -->
 </head>
-<body>
+<body class="light-mode">
   <header>
     <div class="header-container">
       <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
@@ -132,34 +147,27 @@
     <section>
       <h3>Rechte bei Festnahmen</h3>
       <p>
-        Sie haben das Recht zu schweigen. Alles was Sie sagen, kann und wird gegen Sie verwendet werden.<br>
-        Sie haben das Recht auf Akteneinsicht. Da es keinen staatlich geprüften Anwalt gibt,<br>
-        sind wir nicht in der Lage, Ihnen einen zu stellen. Haben Sie Ihre Rechte verstanden?<br>
-        <strong>Rechte müssen, falls nicht verstanden, dreimal vorgelesen werden.</strong>
+        Offiziere haben das Recht, Verdächtige gemäß den Dienstvorschriften festzunehmen. Dabei müssen sie sich an die Einhaltung der Rechte der Bürger halten und die Festnahme begründen können.
       </p>
-      <p><strong>Aus der Asservatenkammer wird nichts ohne Bestätigung entnommen!</strong></p>
-    </section>
-
-    <section>
-      <h3>Wichtige Befehle</h3>
-
-      <h4>Sperrzone</h4>
-      <ul>
-        <li><code>/sperrzone 100</code></li>
-        <li><code>/dsperrzone</code></li>
-      </ul>
-
-      <h4>Fingerabdruckscanner</h4>
-      <ul>
-        <li><code>/scan</code></li>
-      </ul>
-
-      <h4>Grappler</h4>
-      <ul>
-        <li><code>/grappler install</code></li>
-        <li><code>/grappler remove</code></li>
-      </ul>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Vespucci Police Department</p>
+  </footer>
+
+  <script>
+    // Beispiel Dark Mode Toggle Script
+    document.getElementById('modeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+    });
+
+    // Logout Funktion (muss im auth.js definiert sein oder hier)
+    function logout() {
+      // Beispiel: localStorage.clear(); oder ein Redirect zu Login-Seite
+      alert('Logout-Funktion noch nicht implementiert.');
+    }
+  </script>
 </body>
 </html>
