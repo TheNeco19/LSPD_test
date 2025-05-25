@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>LSPD Dashboard</title>
-<link rel="stylesheet" href="assets/css/style.css" />
-<script src="assets/js/auth.js" defer></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    checkAuth();
-  });
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LSPD Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/auth.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuth();
+    });
+  </script>
 </head>
-<body>
+<body class="light-mode">
+  <header>
+    <div class="header-container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button id="modeToggle">Dark Mode</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="bussgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
+        <li><a href="team.html">Mitarbeitende</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <img src="assets/img/lspd-logo.png" alt="LSPD Logo" height="50" />
-  <nav>
-    <a href="dashboard.html">Dashboard</a> |
-    <a href="rangstruktur.html">Rangstruktur</a> |
-    <a href="verordnung.html">Verordnungen</a> |
-    <a href="funkcodes.html">Funkcodes</a> |
-    <a href="#" onclick="logout()">Logout</a>
-  </nav>
-</header>
+  <main class="container">
+    <section class="dashboard">
+      <h2>Willkommen im LSPD Dashboard</h2>
+      <p>Hier findest du interne Informationen und Werkzeuge für das Team.</p>
 
-<main>
-  <h1>Willkommen im LSPD Dashboard</h1>
-  <p>Hier findest du die wichtigsten Infos.</p>
-</main>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Rangstruktur</h3>
+          <p>Alle aktuellen Ränge und Verantwortlichkeiten im Überblick.</p>
+          <a href="rangstruktur.html" class="btn-secondary">Anzeigen</a>
+        </article>
 
+        <article class="card">
+          <h3>Verordnungen</h3>
+          <p>Wichtige interne Vorschriften für die tägliche Arbeit.</p>
+          <a href="verordnung.html" class="btn-secondary">Anzeigen</a>
+        </article>
+
+        <article class="card">
+          <h3>Funkcodes</h3>
+          <p>Alle genutzten Codes für den Funkverkehr mit Bedeutung.</p>
+          <a href="funkcodes.html" class="btn-secondary">Anzeigen</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
+  </footer>
 </body>
 </html>
