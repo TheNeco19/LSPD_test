@@ -2,21 +2,22 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LSPD - Los Santos Police Department</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
 <body class="light-mode">
   <header>
-    <div class="header-container">
-      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo">
+    <div class="header-container container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
       <h1>LSPD - Los Santos Police Department</h1>
       <button id="modeToggle">Dark Mode</button>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Startseite</a></li>
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="bussgeldkatalog.html">Bußgeldkatalog</a></li>
         <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
         <li><a href="team.html">Mitarbeitende</a></li>
@@ -25,15 +26,33 @@
     </nav>
   </header>
 
-  <main>
-    <section class="welcome">
-      <h2>Willkommen bei der LSPD</h2>
-      <p>Diese Webseite dient als Informationsplattform für Mitarbeitende und Bürger in Los Santos.</p>
+  <main class="container">
+    <section class="hero" style="background-image: url('assets/img/lspd-hero.jpg');">
+      <div class="hero-content">
+        <h2>Willkommen bei der LSPD</h2>
+        <p>Deine erste Anlaufstelle für alle Infos rund um das Los Santos Police Department.</p>
+        <a href="login.html" class="btn-primary">Jetzt einloggen</a>
+      </div>
     </section>
 
-    <section class="news">
-      <h2>Aktuelle News</h2>
-      <iframe src="https://docs.google.com/document/d/DEIN_DOC_ID/pub?embedded=true" width="100%" height="500px"></iframe>
+    <section class="info-cards">
+      <article class="card">
+        <h3>Bußgeldkatalog</h3>
+        <p>Informiere dich über aktuelle Bußgelder und Vergehen in Los Santos.</p>
+        <a href="bussgeldkatalog.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
+
+      <article class="card">
+        <h3>Dienstvorschriften</h3>
+        <p>Alle Regeln und Vorschriften für unsere Mitarbeitenden auf einen Blick.</p>
+        <a href="dienstvorschriften.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
+
+      <article class="card">
+        <h3>Mitarbeitende</h3>
+        <p>Triff dein Team – Lerne die Verantwortlichen und Kollegen kennen.</p>
+        <a href="team.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
     </section>
   </main>
 
