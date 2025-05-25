@@ -258,11 +258,3 @@ footer {
   margin-top: 15px;
   font-weight: bold;
 }
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* volle Höhe des Bildschirms */
-  background-color: #121212;
-}
