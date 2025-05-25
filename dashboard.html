@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LSPD Dashboard</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/auth.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    checkAuth();
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <img src="assets/img/lspd-logo.png" alt="LSPD Logo" height="50" />
+  <nav>
+    <a href="dashboard.html">Dashboard</a> |
+    <a href="rangstruktur.html">Rangstruktur</a> |
+    <a href="verordnung.html">Verordnungen</a> |
+    <a href="funkcodes.html">Funkcodes</a> |
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Willkommen im LSPD Dashboard</h1>
+  <p>Hier findest du die wichtigsten Infos.</p>
+</main>
+
+</body>
+</html>

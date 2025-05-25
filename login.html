@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login | LSPD</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LSPD Login</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/auth.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
-          <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
-          <li><a href="team.html">Mitarbeitende</a></li>
-          <li><a href="login.html" class="active">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <h1>Login-Bereich</h1>
-    <p>Der Login ist aktuell deaktiviert – bitte kontaktiere deine Leitung bei Problemen.</p>
-  </main>
+<div id="loginForm">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Benutzername" />
+  <input type="password" id="password" placeholder="Passwort" />
+  <button onclick="login()">Anmelden</button>
+  <p id="loginError" style="color: red; display:none;">Falscher Benutzername oder Passwort.</p>
+</div>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 LSPD - Los Santos Police Department</p>
-    </div>
-  </footer>
 </body>
 </html>
