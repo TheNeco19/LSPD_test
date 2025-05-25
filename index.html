@@ -2,42 +2,43 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LSPD - Los Santos Police Department</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
-<body>
+<body class="light-mode">
   <header>
-    <div class="container">
-      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
-          <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
-          <li><a href="team.html">Mitarbeitende</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+    <div class="header-container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo">
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button id="modeToggle">Dark Mode</button>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="bussgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
+        <li><a href="team.html">Mitarbeitende</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Willkommen beim LSPD</h1>
-      <p>Offizielle Informationsplattform des Los Santos Police Department</p>
-    </div>
-  </section>
+  <main>
+    <section class="welcome">
+      <h2>Willkommen bei der LSPD</h2>
+      <p>Diese Webseite dient als Informationsplattform für Mitarbeitende und Bürger in Los Santos.</p>
+    </section>
 
-  <main class="container">
-    <h2>Unsere Mission</h2>
-    <p>Das LSPD setzt sich für Recht, Ordnung und die Sicherheit aller Bürger in Los Santos ein. Diese Seite dient als Informationsportal für Mitarbeitende und Interessierte.</p>
+    <section class="news">
+      <h2>Aktuelle News</h2>
+      <iframe src="https://docs.google.com/document/d/DEIN_DOC_ID/pub?embedded=true" width="100%" height="500px"></iframe>
+    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 LSPD - Los Santos Police Department</p>
-    </div>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
   </footer>
 </body>
 </html>
