@@ -8,43 +8,223 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dienstvorschriften | LSPD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dienstvorschriften – LSPD</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Zusätzliche Styles nur für diese Seite */
+    .pdv-section {
+      margin-bottom: 40px;
+    }
+    .pdv-section h2 {
+      margin-bottom: 10px;
+      color: #66b3ff;
+      border-bottom: 2px solid #0055aa;
+      padding-bottom: 4px;
+    }
+    .pdv-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .pdv-section li {
+      margin: 6px 0;
+      line-height: 1.6;
+    }
+    .pdv-section li strong {
+      color: #ffcc00;
+    }
+  </style>
+  <script defer src="assets/js/main.js"></script>
 </head>
-<body>
+<body class="light-mode">
   <header>
-    <div class="container">
+    <div class="header-container">
       <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
-          <li><a href="dienstvorschriften.html" class="active">Dienstvorschriften</a></li>
-          <li><a href="team.html">Mitarbeitende</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button id="modeToggle">Dark Mode</button>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="bussgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dienstvorschriften.html" class="active">Dienstvorschriften</a></li>
+        <li><a href="verordnung.html">verordnung</a></li>
+        <li><a href="funkcodes.html">Funkcodes</a></li>
+        <li><a href="rangstruktur.html">Rangstruktur</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
-    <h1>Dienstvorschriften</h1>
-    <p>Hier findest du alle wichtigen Vorschriften für den Polizeidienst in Los Santos:</p>
+    <h2 style="text-align:center;margin-bottom:30px;color:#66b3ff;">Dienstvorschriften (PDV)</h2>
 
-    <ul>
-      <li>§1 Verhalten im Dienst</li>
-      <li>§2 Einsatzprotokolle</li>
-      <li>§3 Umgang mit Zivilisten</li>
-      <li>§4 Schusswaffengebrauch</li>
-      <li>§5 Streifendienst & Kontrollpunkte</li>
-    </ul>
+    <!-- PDV 1 -->
+    <section class="pdv-section" id="pdv1">
+      <h2>PDV 1 – Verhaltensregeln</h2>
+      <ul>
+        <li><strong>PDV 1.1</strong> Der Umgang mit Mitmenschen ist stets freundlich und es ist von jeglichen verbalen Angriffen abzusehen.</li>
+        <li><strong>PDV 1.2</strong> Es wird immer vor der Leitungsebene salutiert.</li>
+        <li><strong>PDV 1.3</strong> Es wird sich an jede Verordnung / jeden Katalog gehalten.</li>
+        <li><strong>PDV 1.4</strong> Schutzwesten, Hüte, Masken sind im Police Department auszuziehen & außerhalb des PD anzuziehen.</li>
+        <li><strong>PDV 1.5</strong> Ansprechpartner sind in folgender Reihenfolge: Lieutenant &gt; Captain &gt; Commander &gt; Inspector &gt; Leitung.</li>
+        <li><strong>PDV 1.6</strong> Das Fragen/Betteln nach Upranks bzw. ein Vorschlag ist absolut untersagt.</li>
+        <li><strong>PDV 1.7</strong> Die Mitnahme von Klappmessern, Baseballschlägern etc. ist im Dienst untersagt.</li>
+        <li><strong>PDV 1.8</strong> Mitarbeiter unter dem Rang eines Commanders gehen außer Dienst, wenn sie privaten Tätigkeiten nachgehen.</li>
+        <li><strong>PDV 1.9</strong> Jobads dürfen nur von den Ausbildern oder Befehlsgebern genutzt werden.</li>
+        <li><strong>PDV 1.10</strong> Das Nachgehen von privaten Anliegen ist auf dem PD‑Parkplatz verboten (z. B. Autohandel, private Streitigkeiten, Treffen mit Zivs).</li>
+        <li><strong>PDV 1.11</strong> Namen von DOA‑Mitgliedern werden nicht preisgegeben.</li>
+        <li><strong>PDV 1.12</strong> Das Trinken von Alkohol im Dienst ist verboten und wird mit Verwarnungen geahndet.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 2 -->
+    <section class="pdv-section" id="pdv2">
+      <h2>PDV 2 – Funkverkehr</h2>
+      <ul>
+        <li><strong>PDV 2.1</strong> Im Funk ist auf absolute Funkdisziplin zu achten (siehe Leitstelle und Funkcodes).</li>
+        <li><strong>PDV 2.2</strong> Bei Dienstantritt wird dieser mit "DN ist 10‑51" gemeldet, Dienstende mit "DN ist 10‑52".</li>
+        <li><strong>PDV 2.3</strong> Wenn das Wort "Break" im Funk fällt, wird das Funken sofort eingestellt.</li>
+        <li><strong>PDV 2.4</strong> Bei einer Streifeneinteilung besteht Anwesenheitspflicht.</li>
+        <li><strong>PDV 2.5</strong> Jede Streife ist verpflichtet, sich im Funk anzukündigen.</li>
+        <li><strong>PDV 2.6</strong> Wenn keine Person direkt angefunkt wird, ist jeder Officer angesprochen.</li>
+        <li><strong>PDV 2.7</strong> Während einer 10‑80 wird nicht dazwischen gefunkt.</li>
+        <li><strong>PDV 2.8</strong> Der Gebrauch einer Dienstwaffe ist mit "10‑32" und Standort an die Leitstelle durchzufunken.<br><em>Abs. 1:</em> Auf einen 10‑32 hat jede Streife zu reagieren. Dies gilt auch für den 11‑99.</li>
+        <li><strong>PDV 2.9</strong> Die Benutzung der Funkcodes 1‑6 ist Pflicht und wird bei einer aktiven Leitstelle geprüft.</li>
+        <li><strong>PDV 2.10</strong> Bei einem Einsatz funkt nur die EL/VF.</li>
+        <li><strong>PDV 2.11</strong> Der Funkcode "10‑53" ist erst ab dem Rang eines Commanders freigegeben.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 3 -->
+    <section class="pdv-section" id="pdv3">
+      <h2>PDV 3 – Streifenverkehr</h2>
+      <ul>
+        <li><strong>PDV 3.1</strong> Zum Fahren der Streife werden nur PD‑Fahrzeuge genutzt.</li>
+        <li><strong>PDV 3.2</strong> Rekruten fahren nicht allein auf Streife. Es muss immer ein ausgebildeter Officer dabei sein.</li>
+        <li><strong>PDV 3.3</strong> Ab Officer 1 ist es verpflichtet, einen Rekruten mit auf Streife zu nehmen (Befehlsgeber sind von dieser Regel ausgeschlossen).</li>
+        <li><strong>PDV 3.4</strong> Außerhalb eines Einsatzes wird sich an die StvO gehalten.</li>
+        <li><strong>PDV 3.5</strong> Es gehen nicht alle Einheiten gleichzeitig außer Funk.<br><em>Abs. 1:</em> In Ausnahmesituationen kann dieser Punkt ignoriert werden.</li>
+        <li><strong>PDV 3.6</strong> Das unnötige Pitten von Zivilisten ist untersagt.</li>
+        <li><strong>PDV 3.7</strong> Das Streifenfahrzeug wird bei Nichtbenutzung eingeparkt.</li>
+        <li><strong>PDV 3.8</strong> Es wird nicht bei höheren Officern oder Befehlsgebern nach einem besseren Wagen gebettelt.</li>
+        <li><strong>PDV 3.9</strong> Eine Streife hat die Pflicht, sich im Aktensystem einzutragen.</li>
+        <li><strong>PDV 3.10</strong> Bei einer 10‑11 ist an das schräge Aufstellen des Streifenwagens vor dem Täterfahrzeug zu denken.</li>
+        <li><strong>PDV 3.11</strong> Rekruten müssen spätestens 2 Wochen nach Einstelldatum alle Ausbildungen absolviert haben (Officer 1 sein).</li>
+      </ul>
+    </section>
+
+    <!-- PDV 4 -->
+    <section class="pdv-section" id="pdv4">
+      <h2>PDV 4 – Dienstuniform</h2>
+      <ul>
+        <li><strong>PDV 4.1</strong> Jeder Officer ist verpflichtet, die korrekte Uniform gemäß Rang zu tragen.</li>
+        <li><strong>PDV 4.2</strong> Beim Streifenfahren ist die Weste auszuziehen, außer ab dem Rang Commander.</li>
+        <li><strong>PDV 4.3</strong> Bei größeren Einsätzen (z. B. Geiselnahme, Bank, Terrorlage) muss die Weste getragen werden.</li>
+        <li><strong>PDV 4.4</strong> Die Uniform muss ständig aktuell gehalten werden. Änderungen sind eigenständig zu prüfen.</li>
+        <li><strong>PDV 4.5</strong> Die Uniform ist genau wie in der Arbeitsuniform‑Vorlage zu tragen – keine Anpassungen erlaubt.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 5 -->
+    <section class="pdv-section" id="pdv5">
+      <h2>PDV 5 – Taktik</h2>
+      <ul>
+        <li><strong>PDV 5.1</strong> Die taktische Sitzposition ist vor jedem potenziellen Schussgefecht einzuhalten.<br><em>Abs. 1:</em> Es wird so angefahren, dass sich beide Officer hinter dem PD‑Fahrzeug verstecken können (Mauer bilden).</li>
+        <li><strong>PDV 5.2</strong> Bei Razzien etc. wird als Masse agiert, nicht in kleinen Gruppen.</li>
+        <li><strong>PDV 5.3</strong> Jeder Officer ist verpflichtet, sich vor einem Großeinsatz selbstständig ausreichend Magazine (mind. 20) und Schutzwesten (mind. 20) zu organisieren.</li>
+        <li><strong>PDV 5.4</strong> Am Ende von jedem Einsatz wird künftig immer das FIB hinzugezogen zwecks Beweissicherung.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 6 -->
+    <section class="pdv-section" id="pdv6">
+      <h2>PDV 6 – Einsätze</h2>
+      <ul>
+        <li><strong>PDV 6.1</strong> Eine EL/VF meldet sich im Funk freiwillig bei einem Einsatz.<br><em>Abs. 1:</em> Sollte keiner mit der Ausbildung da sein, übernimmt der höchstrangige Officer im Dienst.</li>
+        <li><strong>PDV 6.2</strong> Anweisungen der EL/VF/Leitung ist Folge zu leisten.</li>
+        <li><strong>PDV 6.3</strong> Bei einem Ladenraub/Bankraub sind die Einsatzpläne einzuhalten.<br><em>Abs. 1:</em> Jeder Officer ist verpflichtet, Fluchtwege selbstständig abzusperren.<br><em>Abs. 2:</em> EL/VF oder die Leitstelle sorgen für die Organisation einer Overwatch.</li>
+        <li><strong>PDV 6.4</strong> Das DOA ist verpflichtet, immer die maximale Ausdauer sowie Stärke zu haben.</li>
+        <li><strong>PDV 6.5</strong> Aufgestellte Objekte können nur vom Aufsteller entfernt werden (Beispiel Nagelband).</li>
+        <li><strong>PDV 6.6</strong> Jeder Officer ist verpflichtet, seine Absperrungen selbstständig abzubauen.</li>
+        <li><strong>PDV 6.7</strong> Sperrzonen werden nur max. 250 m errichtet.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 7 -->
+    <section class="pdv-section" id="pdv7">
+      <h2>PDV 7 – Schusswaffengebrauch</h2>
+      <ul>
+        <li><strong>PDV 7.1</strong> Alle Dienstwaffen und illegalen Gegenstände sind nach Dienstende im persönlichen Waffenspind bzw. in der Asservatenkammer einzulagern.</li>
+        <li><strong>PDV 7.2</strong> Es werden keine Waffen aus der Asservatenkammer herausgenommen.</li>
+        <li><strong>PDV 7.3</strong> Das Leben jeder Person ist stets zu schützen.</li>
+        <li><strong>PDV 7.4</strong> Unnötiger oder sinnloser Gebrauch von Schusswaffen oder Taser ist nicht gestattet (Schusswaffen = 2 Warns).<br><em>Abs. 1:</em> Dazu gehört ebenfalls das Schlagen der Officer.</li>
+        <li><strong>PDV 7.5</strong> Tödliche Gewalt ist nur in Ausnahmesituationen erlaubt.</li>
+        <li><strong>PDV 7.6</strong> Benutzung der Dienstwaffen läuft in folgender Reihenfolge ab: Taser &gt; Handfeuerwaffe &gt; Langwaffe.<br><em>Abs. 1:</em> In Extremsituationen ist diese Reihenfolge aufgehoben.</li>
+        <li><strong>PDV 7.7</strong> Bei einer 10‑80 ist der Schusswaffengebrauch die letzte Instanz.<br><em>Abs. 1:</em> In Ausnahmesituationen kann das Pitten übersprungen werden.</li>
+        <li><strong>PDV 7.8</strong> In wenigen Extremsituationen ist die Bergung einzelner Officer hinter das Leben nicht bewusstloser Officer zu stellen.</li>
+        <li><strong>PDV 7.9</strong> Wenn eine Person ihrer Forderung (z. B. Hände hoch) nachkommt, wird umgehend das Feuer eingestellt.<br><em>Abs. 1:</em> Flucht zu Fuß ist keine Ausnahmesituation.<br><em>Abs. 2:</em> Bei Verfolgung zu Fuß darf der Flüchtige mit einem Streifenwagen leicht angefahren werden, sodass kein Personenschaden entsteht.</li>
+        <li><strong>PDV 7.10</strong> Es sind zukünftig nur noch folgende Waffenlackierungen erlaubt: Keine.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 8 -->
+    <section class="pdv-section" id="pdv8">
+      <h2>PDV 8 – Panicbutton</h2>
+      <ul>
+        <li><strong>PDV 8.1</strong> Der Panicbutton (11‑99) wird nur in Notfallsituationen ausgelöst.</li>
+        <li><strong>PDV 8.2</strong> Der Panicbutton kann nicht im gefesselten Zustand ausgelöst werden.<br><em>Abs. 1:</em> Ebenso nicht mit Sack über dem Kopf.</li>
+        <li><strong>PDV 8.4</strong> Die Existenz des Panicbuttons ist geheim und darf nicht an Zivilisten weitergegeben werden.</li>
+        <li><strong>PDV 8.5</strong> Der Panicbutton ist versteckt und kann von niemandem abgenommen werden.</li>
+        <li><strong>PDV 8.6</strong> Bei Missbrauch werden harte Sanktionen verhängt.<br><em>Abs. 1:</em> Der Panicbutton ist nicht für den Privatgebrauch gedacht; außerhalb des Dienstes zählt man als Zivilist.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 9 -->
+    <section class="pdv-section" id="pdv9">
+      <h2>PDV 9 – Overwatch</h2>
+      <ul>
+        <li><strong>PDV 9.1</strong> Ein Overwatch darf nur mit entsprechender Flugausbildung geflogen bzw. ausgeparkt werden.<br><em>Abs. 1:</em> Copilot und Schütze dürfen von jedem Officer übernommen werden.<br><em>Abs. 2:</em> Der Copilot übernimmt Funken sowie Kamera.</li>
+        <li><strong>PDV 9.2</strong> Bei Raub/Geiselnahme ist ein Overwatch Pflicht.<br><em>Abs. 1:</em> Der Helikopter muss jederzeit bereit sein, Täter zu verfolgen.<br><em>Abs. 2:</em> Darauf achten, dass die Rotoren am Boden nicht zu hören sind.</li>
+        <li><strong>PDV 9.3</strong> Ab 10 Officern ist eine Overwatch Pflicht.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 10 -->
+    <section class="pdv-section" id="pdv10">
+      <h2>PDV 10 – Datenschutz & Schweigepflicht</h2>
+      <ul>
+        <li><strong>PDV 10.1</strong> Interne Informationen dürfen nicht an Zivilisten oder andere Fraktionen weitergegeben werden.</li>
+        <li><strong>PDV 10.2</strong> Namen oder Daten von Kollegen dürfen nicht genannt werden.</li>
+        <li><strong>PDV 10.3</strong> Bei Nachfrage darfst du nur deine eigene Dienstnummer preisgeben.</li>
+        <li><strong>PDV 10.4</strong> Anzahl der Beamten im Dienst darf nicht kommuniziert werden.</li>
+        <li><strong>PDV 10.5</strong> Keine Weitergabe von Infos zu Sonder- oder Führungseinheiten.</li>
+        <li><strong>PDV 10.6</strong> Existenz des Panic Buttons ist streng geheim.</li>
+        <li><strong>PDV 10.7</strong> Screenshots, Videos oder Sprachaufnahmen bedürfen Freigabe der Leitung.</li>
+        <li><strong>PDV 10.8</strong> Interne Vorgänge bleiben intern.</li>
+        <li><strong>PDV 10.9</strong> Funkgespräche dürfen außerhalb des PDs nicht thematisiert werden.</li>
+        <li><strong>PDV 10.10</strong> Angehörige von Spezial- oder Undercovereinheiten sind besonders zu schützen.</li>
+      </ul>
+    </section>
+
+    <!-- PDV 11 -->
+    <section class="pdv-section" id="pdv11">
+      <h2>PDV 11 – D‑Funk</h2>
+      <ul>
+        <li><strong>PDV 11.1</strong> Im D‑Funk wird stets freundlich geschrieben.</li>
+        <li><strong>PDV 11.2</strong> Keine unangemessenen Nachrichten oder Emojis im D‑Funk.</li>
+        <li><strong>PDV 11.3</strong> Die Leitung wird nur mit gutem Grund gepingt.<br><em>Abs. 1:</em> Zuerst Befehlsgeber pingen; unnötige Pings sind verboten.</li>
+        <li><strong>PDV 11.4</strong> Betteln nach Upranks im D‑Funk ist untersagt.</li>
+      </ul>
+    </section>
+
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 LSPD - Los Santos Police Department</p>
-    </div>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
   </footer>
 </body>
 </html>
+
