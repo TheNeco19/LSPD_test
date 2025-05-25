@@ -162,61 +162,15 @@ footer {
 #loginError {
   margin-top: 15px;
   font-weight: bold;
-  color: #b00020; /* Rotes Error-Highlight */
+  color: #b00020;
   display: none;
 }
 
-/* --- Light Mode Styles --- */
-body.light-mode {
-  background-color: #f0f0f0;
-  color: #121212;
-}
-
-body.light-mode a {
-  color: #0055aa;
-}
-
-body.light-mode header, 
-body.light-mode .header-container {
-  background-color: #e0e0e0;
-  border-bottom: 2px solid #0077ee;
-}
-
-body.light-mode footer {
-  background-color: #e0e0e0;
-  border-top: 2px solid #0077ee;
-}
-
-body.light-mode .btn-primary {
-  background-color: #0055aa;
-  color: white;
-}
-
-body.light-mode .btn-primary:hover {
-  background-color: #004080;
-}
-
-body.light-mode .btn-secondary {
-  color: #0055aa;
-  border-color: #0055aa;
-}
-
-body.light-mode .btn-secondary:hover {
-  background-color: #0055aa;
-  color: white;
-}
-
-body.light-mode .card {
-  background-color: #ffffff;
-  border-color: #ccc;
-  color: #121212;
-}
-
-/* Login Form Light Mode Anpassungen */
+/* Light Mode Anpassung nur für Login */
 body.light-mode #loginForm {
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 85, 170, 0.3);
   color: #121212;
+  box-shadow: 0 0 15px rgba(0, 85, 170, 0.3);
 }
 
 body.light-mode #loginForm h2 {
@@ -251,12 +205,5 @@ body.light-mode #loginForm button:hover {
 }
 
 body.light-mode #loginError {
-  color: #b00020; /* Dunkleres Rot auf hellem Hintergrund */
-}
-
-/* Navigation aktiver Link */
-nav ul li a.active {
-  font-weight: 700;
-  border-bottom: 2px solid #66b3ff;
-  padding-bottom: 2px;
+  color: #b00020;
 }
