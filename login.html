@@ -1,1 +1,54 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - LSPD</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>LSPD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
+        <li><a href="team.html">Mitarbeitende</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <h2>Login</h2>
+    <form onsubmit="login(event)">
+      <label for="user">Benutzername:</label>
+      <input type="text" id="user" required /><br />
+      <label for="pw">Passwort:</label>
+      <input type="password" id="pw" required /><br />
+      <button type="submit">Login</button>
+    </form>
+    <p id="login-status"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD</p>
+  </footer>
+
+  <script>
+    function login(event) {
+      event.preventDefault();
+      const user = document.getElementById('user').value;
+      const pw = document.getElementById('pw').value;
+      if ((user === 'admin' && pw === 'geheim') || (user === 'officer' && pw === 'lspd123')) {
+        localStorage.setItem('lspdAuth', 'true');
+        document.getElementById('login-status').innerText = 'Login erfolgreich! Du kannst jetzt auf \"Mitarbeitende\" zugreifen.';
+      } else {
+        document.getElementById('login-status').innerText = 'Login fehlgeschlagen!';
+      }
+    }
+  </script>
+</body>
+</html>
