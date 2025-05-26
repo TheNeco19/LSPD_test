@@ -11,9 +11,11 @@
 
 <div id="loginForm" role="main" aria-labelledby="loginTitle">
   <h2 id="loginTitle">Login</h2>
-  <input type="text" id="username" placeholder="Benutzername" aria-label="Benutzername" />
-  <input type="password" id="password" placeholder="Passwort" aria-label="Passwort" />
-  <button onclick="login()" aria-describedby="loginError">Anmelden</button>
+  <form id="form">
+    <input type="text" id="username" placeholder="Benutzername" aria-label="Benutzername" />
+    <input type="password" id="password" placeholder="Passwort" aria-label="Passwort" />
+    <button aria-describedby="loginError">Anmelden</button>
+  </form>
   <p id="loginError" style="color: red; display:none;">Falscher Benutzername oder Passwort.</p>
 </div>
 
