@@ -6,6 +6,19 @@ body {
   color: #e0e0e0;
 }
 
+body.light-mode,
+body.light-mode header,
+body.light-mode nav ul {
+  background-color: #fff;
+  color: #121212;
+}
+body.light-mode nav ul li a {
+  color: #121212;
+}
+body.light-mode nav ul li a.active {
+  color: #e0e0e0;
+}
+
 /* Header */
 header {
   background-color: #0a0a0a;
@@ -65,12 +78,12 @@ nav ul li a {
   color: #e0e0e0;
   text-decoration: none;
   transition: background 0.3s;
+  border-radius: 8px;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
   background-color: #0055aa;
-  border-radius: 8px;
 }
 
 /* Container */
@@ -211,7 +224,7 @@ footer {
 
 #loginForm input[type="text"],
 #loginForm input[type="password"] {
-  width: 100%;
+  width: calc(100% - 30px);
   padding: 12px 15px;
   margin: 10px 0 20px 0;
   border: none;
@@ -234,6 +247,8 @@ footer {
   outline: none;
 }
 
+
+#loginForm .button,
 #loginForm button {
   width: 100%;
   padding: 12px;

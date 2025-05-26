@@ -1,14 +1,20 @@
 // Beispiel-Benutzer (nur für Demo)
 const users = [
-  { username: 'officer1', password: 'password123' },
-  { username: 'admin', password: 'adminpass' }
+  { username: 'officer1', password: 'cGFzc3dvcmQxMjM=' },
+  { username: 'admin', password: 'YWRtaW5wYXNz' }
 ];
 
-function login() {
+const form = document.getElementById("form");
+if(form) {
+    form.addEventListener("submit", login);
+}
+
+function login(event) {
+  event.preventDefault();
   const user = document.getElementById('username').value;
   const pass = document.getElementById('password').value;
 
-  const validUser = users.find(u => u.username === user && u.password === pass);
+  const validUser = users.find(u => u.username === user && u.password === btoa(pass));
   if (validUser) {
     sessionStorage.setItem('loggedInUser', user);
     window.location.href = 'dashboard.html';
